@@ -8,6 +8,18 @@
 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    height: 55vh;
+    margin: 40px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.image
+{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
 }
