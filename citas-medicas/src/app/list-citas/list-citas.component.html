@@ -1,0 +1,12 @@
+<div *ngIf="listadoCitas.length === 0" class="card bg-light">
+    <div class="card-body colores">
+        <h4 class="card-title text-center">No hay citas por mostrar</h4>
+    </div>
+</div>
+<div *ngFor = "let cita of listadoCitas; let i = index" class="card bg-body mb-2">
+    <p class="card-text colores"><span>Nombre:</span>{{cita.nombre}}</p>
+    <p class="card-text coloresoscuro"><span>Fecha:</span>{{cita.fecha}}</p>
+    <p class="card-text colores"><span>Hora:</span>{{cita.hora}}</p>
+    <p class="card-text coloresoscuro"><span>Síntomas:</span>{{cita.sintomas}}</p>
+    <button style="width: 100%;" class="btn btn-danger btn-block" (click) = "eliminarCita(i)">Eliminar</button>
+</div>

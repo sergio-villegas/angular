@@ -1,0 +1,12 @@
+<div class="container pt-3">
+  <div class="text-center tituloClass">Citas Médicas</div>
+  <img class="" src="../assets/img/villegas-logo.png" height="70px" width="70px">
+  <div class="row mt-3">
+    <div class="col-lg-6">
+      <app-crear-citas (nuevaCita)="agregarCita($event)"></app-crear-citas>
+    </div>
+    <div class="col-lg-6">
+      <app-list-citas [listadoCitas]="listCitas" (deleteCita)="eliminarCitaListado($event)"></app-list-citas>
+    </div>
+  </div>
+</div>
