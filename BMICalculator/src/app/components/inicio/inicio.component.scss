@@ -1,0 +1,62 @@
+.fondoItem
+{
+    background-color: #620955;
+    height: 130px;
+    border-radius: 20px;
+    color: cornflowerblue;
+}
+.sexo
+{
+    font-size: 40px;
+}
+.estiloNumero
+{
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: -30px;
+}
+.cm
+{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.form-range
+{
+    padding: 0px 20px;
+}
+.range-cust::-webkit-slider-thumb
+{
+    background: cornflowerblue;
+}
+.range-cust::-moz-range-thumb
+{
+    background: cornflowerblue;
+}
+.range-cust::-ms-thumb
+{
+    background: cornflowerblue;
+}
+.sumaResta
+{
+    cursor: pointer;
+    background-color: #ff4c4f5e;
+    padding: 7px;
+    border-radius: 15px;
+    margin-left: 3px;
+}
+.sexoDesactivado
+{
+    background-color: #7D2F2F33;
+}
+.foto
+{
+    size: 30px;
+}
+
+.img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
