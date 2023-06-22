@@ -1,0 +1,35 @@
+<mat-card style="border: 0.5rem solid; border-color: dodgerblue;">
+    <mat-card-header>
+        <h1 style="margin: 0px 360px;">User Registration</h1>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="registerform" (ngSubmit)="proceedregisteration()">
+            <mat-form-field class="example-full-width">
+                <mat-label>Username</mat-label>
+                <input matInput formControlName="id">
+            </mat-form-field>
+            <mat-form-field style="margin: 0px 13px;" class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name">
+            </mat-form-field>
+            <mat-form-field style="margin: 0px 0px;" class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput formControlName="password">
+            </mat-form-field>
+            <mat-form-field style="margin: 0px 13px;" class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email">
+            </mat-form-field>
+            <div>
+                <mat-radio-group formControlName="gender" aria-label="Gender">
+                    <mat-radio-button style="margin: 0px 250px;" value="male">Male</mat-radio-button>
+                    <mat-radio-button value="female">Female</mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div>
+                <button mat-raised-button style="margin: 0px 195px;" color="primary">Submit</button>
+                <a routerLink="/login" style="margin: 0px 150px;" mat-raised-button color="accent">Back to Login</a>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>
