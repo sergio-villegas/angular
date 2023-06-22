@@ -1,0 +1,25 @@
+.colores
+{
+    background: #44A08D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.buttoncolor
+{
+    background-color: black;
+}
+label
+{
+    font-weight: 600;
+}
+.card
+{
+    margin: 35px 450px;
+    transform: scale(1.14);
+    border: 2.5mm ridge #093637;
+}
+h1
+{
+    text-align: center;
+    color: whitesmoke;
+}

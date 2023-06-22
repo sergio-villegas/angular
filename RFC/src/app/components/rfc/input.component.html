@@ -1,0 +1,26 @@
+<div class="card bg-light">
+    <div class="card-body colores">
+        <h5 class="card-title text-center">Ingreso de datos</h5>
+        <div class="form-group mb-3">
+            <label for="nombre">Nombre(s)</label>
+            <input type="text" id="nombre" [(ngModel)] = "nombre" class="form-control" placeholder="Ingrese nombre">
+        </div>
+        <div class="form-group mb-3">
+            <label for="apellidoPaterno">Apellido Paterno</label>
+            <input type="text" id="apellidoPaterno" [(ngModel)] = "apellidoPaterno" class="form-control" placeholder="Ingrese apellido paterno">
+        </div>
+        <div class="form-group mb-3">
+            <label for="apellidoMaterno">Apellido Materno</label>
+            <input type="text" id="apellidoMaterno" [(ngModel)] = "apellidoMaterno" class="form-control" placeholder="Ingrese apellido materno">
+        </div>
+        <div class="form-group mb-3">
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fechaNacimiento" [(ngModel)] = "fechaNacimiento" class="form-control">
+        </div>
+        <button style="width: 100%;" (click) = "generarRFC()" class="btn btn-primary btn-block">Generar RFC</button>
+    </div>
+</div>
+
+<div class="card bg-light colores">
+    <h1><p class="card-text"><span></span>{{RFC}}</p></h1>
+</div>
